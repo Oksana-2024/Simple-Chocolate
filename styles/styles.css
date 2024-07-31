@@ -143,7 +143,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 1;
 }
 
 .menu-mobile-close {
@@ -360,15 +359,14 @@ button {
   background-color: #fafafa;
   width: 28px;
   height: 28px;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .start-page-scroll-icon {
   fill: #fd9222;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  
 }
 
 @media screen and (min-width: 768px) {
