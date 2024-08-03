@@ -78,7 +78,7 @@
             <ul class="menu-nav-list">
               <li class="menu-nav-item">
                 <a class="menu-nav-link" href="./index.html"
-                  ><span class="features-color">Home</span></a
+                  ><span class="color-orange">Home</span></a
                 >
               </li>
               <li class="menu-nav-item">
@@ -133,14 +133,16 @@
               </button>
             </div>
             <div class="start-page-scroll">
-              <p class="start-page-scroll-text">scroll down</p>
-              <span class="start-page-scroll-btn">
+              <button type="button" class="start-page-scroll-btn">
+                scroll down
+              </button>
+              <div class="start-page-scroll-icon">
                 <svg class="start-page-scroll-icon" width="16" height="16">
                   <use
                     href="./images/symbol-defs.svg#icon-angle-small-left"
                   ></use>
                 </svg>
-              </span>
+              </div>
             </div>
           </div>
         </div>
@@ -378,6 +380,147 @@
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <!--  /* made-page */ -->
+
+      <section class="made-page">
+        <div class="container made-container">
+          <h2 class="made-page-title">
+            how it’s <span class="color-orange">made?</span>
+          </h2>
+          <div class="made-page-box">
+            <picture class="made-page-picture">
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/image_chocolate@pc.jpg    1x,
+                  ./images/image_chocolate@pc@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/image_chocolate@t.jpg    1x,
+                  ./images/image_chocolate@t@2x.jpg 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/image_chocolate@m.jpg    1x,
+                  ./images/image_chocolate@m@2x.jpg 2x
+                "
+              />
+              <img
+                class="made-page-img"
+                src="./images/image_chocolate@m.jpg"
+                alt="Chocolate"
+                width="614"
+              />
+            </picture>
+            <div class="made-page-block">
+              <h3 class="made-page-subtitle">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
+              <ul class="made-page-list">
+                <li class="made-page-list-item">
+                  <div class="made-page-list-marker"></div>
+                  <p class="made-page-text">
+                    Heat the milk in a saucepan without bringing it to a boil.
+                    Add sugar and cocoa powder.
+                  </p>
+                </li>
+                <li class="made-page-list-item">
+                  <div class="made-page-list-marker"></div>
+                  <p class="made-page-text">
+                    At the same time, prepare a water bath. Melt the butter on
+                    it.
+                  </p>
+                </li>
+                <li class="made-page-list-item">
+                  <div class="made-page-list-marker"></div>
+                  <p class="made-page-text">
+                    "Mix" the milk mixture and already liquid butter. Mix
+                    thoroughly with a silicone spatula so that the mass becomes
+                    uniform and silky.
+                  </p>
+                </li>
+                <li class="made-page-list-item">
+                  <div class="made-page-list-marker"></div>
+                  <p class="made-page-text">
+                    Heat the mixture over low heat, letting it barely boil.
+                  </p>
+                </li>
+                <li class="made-page-list-item">
+                  <div class="made-page-list-marker"></div>
+                  <p class="made-page-text">
+                    Pour the chocolate into special containers (can be replaced
+                    with ice molds). Allow to cool and harden.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!--   /* review */ -->
+      <section class="review-page">
+        <div class="container review-container">
+          <h2 class="review-page-title"><span class="color-orange">chocolate</span> is loved</h2>
+          <ul class="review-page-list">
+            <li class="review-page-list-item">
+              <img
+                class="review-page-img"
+                width="80"
+                src="./images/Ellipse.png"
+                alt="Photo"
+                srcset="./images/Ellipse.png 1x, ./images/Ellipse@2x.png 2x"
+              />
+              <h3 class="review-page-list-subtitle">Victoria Dobrzhanska</h3>
+              <p class="review-page-list-text">
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
+              </p>
+            </li>
+            <li class="review-page-list-item item-primary">
+              <img
+                class="review-page-img"
+                width="80"
+                src="./images/Ellipse2.png"
+                alt="Photo"
+                srcset="./images/Ellipse2.png 1x, ./images/Ellipse2@2x.png 2x"
+              />
+              <h3 class="review-page-list-subtitle">Nazar Babenko</h3>
+              <p class="review-page-list-text">
+                This chocolate confection is a delight! A delight! The wafer is
+                light and crisp, the hazelnut cream is smooth, and the chocolate
+                is good.
+              </p>
+            </li>
+            <li class="review-page-list-item item-secondary">
+              <img
+                class="review-page-img"
+                width="80"
+                src="./images/Ellipse3.png"
+                alt="Photo"
+                srcset="./images/Ellipse3.png 1x, ./images/Ellipse3@2x.png 2x"
+              />
+              <h3 class="review-page-list-subtitle">Olena Kampusch</h3>
+              <p class="review-page-list-text">
+                Chocolate is a family favourite treat. Love the delicious smooth
+                chocolate and the creaminess inside. The wafer is soft but
+                crunchy.
+              </p>
+            </li>
+          </ul>
+          <button class="review-page-btn" type="button">Leave  a review</button>
+        </div>
+        <div class="modal-review">
+          <div class="review-overlay"></div>
         </div>
       </section>
     </main>

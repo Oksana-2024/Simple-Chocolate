@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  background-color: #eceded;
 }
 
 ul,
@@ -48,14 +49,15 @@ button {
 }
 
 .container {
-  max-width: 375px;
-  padding: 0 15px;
+  max-width: 335px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 32px;
   }
 }
 
@@ -183,10 +185,6 @@ button {
   color: #fff;
 }
 
-.features-color {
-  color: #fd9222;
-}
-
 .menu-soc-list {
   display: flex;
   flex-direction: row;
@@ -235,7 +233,8 @@ button {
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: #111;
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .header-social-list {
     display: flex;
@@ -277,7 +276,7 @@ button {
 /* start-page */
 
 .start-page {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .start-container {
@@ -285,10 +284,15 @@ button {
   height: 620px;
   background-image: url(../images/chocolate-covered-cocoa-powder@m.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 50% 50%;
   background-size: cover;
-  padding: 385px 20px 20px;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  padding-bottom: 20px;
   border-radius: 30px;
+  align-items: baseline;
+  justify-content: end;
 }
 
 @media screen and (min-resolution: 192dpi),
@@ -305,7 +309,6 @@ button {
   line-height: 1.2;
   letter-spacing: -0.03em;
   color: #fff;
-  margin-bottom: 32px;
 }
 
 .start-page-first-btn {
@@ -338,14 +341,6 @@ button {
   height: 41px;
 }
 
-.start-page-scroll-text {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: -0.03em;
-  color: #fff;
-}
-
 .start-page-scroll {
   display: flex;
   flex-direction: row;
@@ -355,6 +350,18 @@ button {
 }
 
 .start-page-scroll-btn {
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: #fff;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.start-page-scroll-icon {
   border-radius: 50%;
   background-color: #fafafa;
   width: 28px;
@@ -370,7 +377,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .start-page {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 
   .start-container {
@@ -378,10 +385,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-top: 0;
+    padding: 0 40px 40px;
     background-image: url(../images/chocolate-covered-cocoa-powder-t.jpg);
   }
 
@@ -398,9 +402,10 @@ button {
   .start-page-btn-box {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
     justify-content: space-between;
-    align-items: flex-start;
     height: 45px;
+    width: 100%;
   }
 }
 
@@ -414,7 +419,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .start-page {
-    margin-bottom: 72px;
+    padding-bottom: 72px;
   }
   .start-container {
     max-height: 600px;
@@ -480,8 +485,12 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .benefits-page {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .benefits-container {
-    padding: 50px 32px;
+    padding: 0px;
   }
 
   .decor-line-primary,
@@ -498,13 +507,15 @@ button {
 
 @media screen and (min-width: 1200px) {
   .benefits-container {
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .benefits-page-list {
     display: flex;
     flex-direction: row;
     gap: 70px;
+    justify-content: space-between;
   }
 
   .benefits-page-item {
@@ -545,7 +556,13 @@ button {
 /* features-page */
 
 .feats-page {
-  padding: 60px 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.feats-container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .feats-page-title {
@@ -587,7 +604,7 @@ button {
   padding: 28px 56px;
   border-radius: 15px;
   overflow: hidden;
-  position: relative;  
+  position: relative;
   display: grid;
   gap: 25px;
 }
@@ -608,6 +625,7 @@ button {
 .feats-page-list-item.semi,
 .feats-page-list-item.milk {
   border: 1px solid #fd9222;
+  background-color: #fff;
 }
 
 .feats-inform-subtitle {
@@ -681,12 +699,11 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .feats-page {
+    padding: 80px 32px;
+  }
 
-.feats-page {
-  padding: 80px 32px;
-}
-
-  .feats-container{
+  .feats-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -709,7 +726,7 @@ button {
     justify-content: center;
   }
 
- .semi {
+  .semi {
     order: 1;
   }
 
@@ -717,14 +734,12 @@ button {
     order: 2;
   }
 
- 
   .nuts {
     order: 3;
   }
 }
 
 @media screen and (min-width: 1200px) {
-
   .feats-page {
     padding: 100px 32px;
   }
@@ -733,11 +748,10 @@ button {
     display: flex;
     gap: 19px;
     flex-direction: row;
-    
   }
 
   .feats-page-list-item {
-    width: calc( (100% - 57px) / 4);
+    width: calc((100% - 57px) / 4);
   }
 
   .semi {
@@ -748,7 +762,270 @@ button {
     order: 0;
   }
   .milk {
-    order:0;
+    order: 0;
   }
-  
+}
+
+/* made-page */
+
+.made-page {
+  padding-bottom: 30px;
+}
+
+.made-container {
+}
+
+.made-page-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+
+.made-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.made-page-img {
+  border-radius: 15px;
+}
+
+.made-page-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.made-page-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111;
+  margin-bottom: 28px;
+}
+
+.made-page-block {
+  background-color: #fff;
+  padding: 20px 14px;
+  border-radius: 15px;
+}
+
+.made-page-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+.made-page-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+}
+
+.made-page-list-marker {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
+  flex-shrink: 0;
+}
+
+.made-page-list-item {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: baseline;
+}
+
+@media screen and (min-width: 768px) {
+  .made-page {
+    padding-bottom: 40px;
+  }
+
+  .made-container {
+    gap: 50px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  .start-page-title {
+    margin-bottom: 0px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .made-page-subtitle {
+    max-width: 350px;
+  }
+
+  .made-page-block {
+    padding: 32px;
+    max-width: 614px;
+  }
+
+  .made-page-list {
+    align-items: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .made-page-box {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .made-container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .made-page-list {
+    gap: 24px;
+  }
+
+  .made-page-img {
+    max-width: 600px;
+  }
+
+  .made-page-block {
+    max-width: 516px;
+    max-height: 400px;
+  }
+}
+
+/* review */
+.review-page {
+  padding-top: 30px;
+  padding-bottom: 93px;
+}
+
+.review-container {
+  width: 100%;
+  height: auto;
+}
+
+.review-page-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 74px;
+}
+.review-page-list {
+  margin-bottom: 32px;
+}
+
+.review-page-list-item {
+  background-color: #fff;
+  border-radius: 15px;
+  position: relative;
+  padding-top: 56px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 42px;
+}
+
+.review-page-img {
+  position: absolute;
+  top: -42px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.review-page-list-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111;
+  margin-bottom: 24px;
+}
+
+.review-page-list-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.item-primary {
+  display: none;
+}
+
+.item-secondary {
+  display: none;
+}
+
+.review-page-btn {
+  border: 1px solid #fd9222;
+border-radius: 100px;
+padding: 12px 28px;
+width: 165px;
+height: 41px;
+font-weight: 600;
+font-size: 14px;
+text-align: center;
+color: #111;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+@media screen and (min-width: 768px){
+.item-primary {
+  display: block;
+}
+.review-page-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 94px;
+}
+
+.review-page-list-item {
+  width: calc((100% - 16px) / 2);
+}
+
+.review-page {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.review-page-title {
+  margin-bottom: 91px;
+  font-size: 24px;
+line-height: 1.17;
+}
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+  .item-secondary {
+    display: block;
+  }
+
+  .review-page-list {
+    gap: 28px;
+  }
+  .review-page-list {
+    margin-bottom: 50px;
+  }
+}
+.modal-review {
+
 }
