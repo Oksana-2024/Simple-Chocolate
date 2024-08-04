@@ -117,31 +117,32 @@
 
       <section class="start-page">
         <div class="container start-container">
-          <div class="start-page-title-box">
+          <div class="start-page-content">
             <h1 class="start-page-title">
               Treat yourself or a loved one to our finest ingredients for a
               moment of pure delight!
             </h1>
-          </div>
-          <div class="start-page-btn-box">
-            <div class="start-page-btn">
-              <button class="start-page-first-btn" type="button">
-                Buy now
-              </button>
-              <button class="start-page-second-btn" type="button">
-                How it’s made
-              </button>
-            </div>
-            <div class="start-page-scroll">
-              <button type="button" class="start-page-scroll-btn">
-                scroll down
-              </button>
-              <div class="start-page-scroll-icon">
-                <svg class="start-page-scroll-icon" width="16" height="16">
-                  <use
-                    href="./images/symbol-defs.svg#icon-angle-small-left"
-                  ></use>
-                </svg>
+
+            <div class="start-page-btn-box">
+              <div class="start-page-btn">
+                <button class="start-page-first-btn" type="button">
+                  Buy now
+                </button>
+                <button class="start-page-second-btn" type="button">
+                  How it’s made
+                </button>
+              </div>
+              <div class="start-page-scroll">
+                <button type="button" class="start-page-scroll-btn">
+                  scroll down
+                </button>
+                <div class="start-page-scroll-icon">
+                  <svg class="start-page-scroll-icon" width="16" height="16">
+                    <use
+                      href="./images/symbol-defs.svg#icon-angle-small-left"
+                    ></use>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -467,10 +468,12 @@
         </div>
       </section>
 
-    <!--   /* review */ -->
+      <!--   /* review */ -->
       <section class="review-page">
         <div class="container review-container">
-          <h2 class="review-page-title"><span class="color-orange">chocolate</span> is loved</h2>
+          <h2 class="review-page-title">
+            <span class="color-orange">chocolate</span> is loved
+          </h2>
           <ul class="review-page-list">
             <li class="review-page-list-item">
               <img
@@ -517,14 +520,89 @@
               </p>
             </li>
           </ul>
-          <button class="review-page-btn" type="button">Leave  a review</button>
-        </div>
-        <div class="modal-review">
-          <div class="review-overlay"></div>
+          <button class="review-page-btn" type="button" data-modal-open>
+            Leave a review
+          </button>
         </div>
       </section>
     </main>
+    
+    <!--  modal-review -->
+    <div class="modal-review" data-modal>
+      <div class="review-overlay">
+        <button class="overlay-close-btn" type="button" data-modal-close>
+          <svg class="overlay-close-icon" width="24" height="24">
+            <use href="./images/symbol-defs.svg#icon-x"></use>
+          </svg>
+        </button>
+        <h3 class="overlay-subtitle">
+          leave a review <br />
+          about
+          <span class="color-orange">our chocolate</span>
+        </h3>
+        <form class="overlay-form" autocomplete="off">
+          <label class="overlay-label" for="user-name">Name</label>
+          <div class="overlay-input-icon">
+            <input
+              autofocus
+              class="overlay-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              required
+            />
+            <svg class="input-icon" width="17" height="17">
+              <use href="./images/symbol-defs.svg#icon-user"></use>
+            </svg>
+          </div>
+          <label class="overlay-label" for="user-email">Email</label>
+          <div class="overlay-input-icon">
+            <input
+              class="overlay-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              required
+            />
+            <svg class="input-icon" width="17" height="17">
+              <use href="./images/symbol-defs.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <label class="overlay-label" for="user-phone">Phone number</label>
+          <div class="overlay-input-icon">
+            <input
+              class="overlay-input"
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              required
+            />
+            <svg class="input-icon" width="17" height="17">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label class="overlay-label" for="user-comment">Comment</label>
+          <textarea
+            class="overlay-comment"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Enter text"
+          ></textarea>
+          <label for="user-privaty">
+            <input
+              type="checkbox"
+              name="user-privaty"
+              id="user-privaty"
+              value="true"
+            />
+            <span>I accept the terms and conditions of the Privacy Policy</span>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
     <footer></footer>
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

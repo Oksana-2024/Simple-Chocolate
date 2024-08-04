@@ -49,7 +49,7 @@ button {
 }
 
 .container {
-  max-width: 335px;
+  max-width: 375px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -279,7 +279,7 @@ button {
   padding-bottom: 60px;
 }
 
-.start-container {
+.start-page-content {
   width: 100%;
   height: 620px;
   background-image: url(../images/chocolate-covered-cocoa-powder@m.jpg);
@@ -290,6 +290,8 @@ button {
   gap: 32px;
   flex-direction: column;
   padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 30px;
   align-items: baseline;
   justify-content: end;
@@ -298,7 +300,7 @@ button {
 @media screen and (min-resolution: 192dpi),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx) {
-  .start-container {
+  .start-page-content {
     background-image: url(../images/chocolate-covered-cocoa-powder@m@2x.jpg);
   }
 }
@@ -309,25 +311,27 @@ button {
   line-height: 1.2;
   letter-spacing: -0.03em;
   color: #fff;
-}
-
-.start-page-first-btn {
-  border: none;
-  border-radius: 100px;
-  width: 120px;
-  height: 41px;
-  background-color: #fd9222;
-  font-weight: 600;
-  font-size: 14px;
-  color: #fff;
+  text-align: start;
+  max-width: 299px;
 }
 
 .start-page-btn {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   gap: 14px;
   margin-bottom: 32px;
+  width: 100%;
+}
+
+.start-page-first-btn {
+  border: none;
+  border-radius: 100px;
+  padding: 12px 28px;
+  background-color: #fd9222;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
 }
 
 .start-page-second-btn {
@@ -337,8 +341,7 @@ button {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
-  width: 159px;
-  height: 41px;
+  padding: 12px 28px;
 }
 
 .start-page-scroll {
@@ -369,9 +372,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.start-page-scroll-icon {
   fill: #fd9222;
 }
 
@@ -380,7 +380,7 @@ button {
     padding-bottom: 40px;
   }
 
-  .start-container {
+  .start-page-content {
     height: 890px;
     display: flex;
     flex-direction: column;
@@ -389,14 +389,13 @@ button {
     background-image: url(../images/chocolate-covered-cocoa-powder-t.jpg);
   }
 
-  .start-page-title-box {
-    width: 484px;
-  }
-
   .start-page-title {
     font-weight: 500;
+
     font-size: 28px;
-    line-height: 1.21;
+    line-height: 1.22;
+    letter-spacing: -0.03em;
+    max-width: 484px;
   }
 
   .start-page-btn-box {
@@ -412,7 +411,7 @@ button {
 @media screen and (min-width: 768px) and (min-resolution: 192dpi),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx) {
-  .start-container {
+  .start-page-content {
     background-image: url(../images/chocolate-covered-cocoa-powder-t@2x.jpg);
   }
 }
@@ -421,7 +420,7 @@ button {
   .start-page {
     padding-bottom: 72px;
   }
-  .start-container {
+  .start-page-content {
     max-height: 600px;
     background-image: url(../images/chocolate-covered-cocoa-powder-pc.jpg);
   }
@@ -430,7 +429,7 @@ button {
 @media screen and (min-width: 1200px) and (min-resolution: 192dpi),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx) {
-  .start-container {
+  .start-page-content {
     background-image: url(../images/chocolate-covered-cocoa-powder-pc@2x.jpg);
   }
 }
@@ -442,7 +441,8 @@ button {
 }
 
 .benefits-container {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .benefits-page-list {
@@ -506,9 +506,14 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
+  .benefits-page {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   .benefits-container {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
   .benefits-page-list {
@@ -741,7 +746,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .feats-page {
-    padding: 100px 32px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .feats-page-list {
@@ -770,9 +776,6 @@ button {
 
 .made-page {
   padding-bottom: 30px;
-}
-
-.made-container {
 }
 
 .made-page-title {
@@ -886,8 +889,8 @@ button {
   }
 
   .made-container {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 
   .made-page-list {
@@ -972,49 +975,46 @@ button {
 
 .review-page-btn {
   border: 1px solid #fd9222;
-border-radius: 100px;
-padding: 12px 28px;
-width: 165px;
-height: 41px;
-font-weight: 600;
-font-size: 14px;
-text-align: center;
-color: #111;
-margin-left: auto;
-margin-right: auto;
-display: block;
-}
-
-@media screen and (min-width: 768px){
-.item-primary {
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 165px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #111;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
-.review-page-list {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  margin-bottom: 94px;
-}
 
-.review-page-list-item {
-  width: calc((100% - 16px) / 2);
-}
+@media screen and (min-width: 768px) {
+  .item-primary {
+    display: block;
+  }
+  .review-page-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 94px;
+  }
 
-.review-page {
-  padding-top: 40px;
-  padding-bottom: 80px;
-}
-.review-page-title {
-  margin-bottom: 91px;
-  font-size: 24px;
-line-height: 1.17;
-}
+  .review-page-list-item {
+    width: calc((100% - 16px) / 2);
+  }
 
+  .review-page {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .review-page-title {
+    margin-bottom: 91px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
-
 
 @media screen and (min-width: 1200px) {
-
   .item-secondary {
     display: block;
   }
@@ -1026,6 +1026,106 @@ line-height: 1.17;
     margin-bottom: 50px;
   }
 }
-.modal-review {
 
+/*  <!--  modal-review --> */
+.modal-review {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(51, 0, 51);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-review.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.review-overlay {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 320px;
+  height: auto;
+  background-color: #fff;
+  padding: 32px 24px;
+}
+
+.overlay-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+}
+
+.overlay-close-icon {
+  stroke: #000;
+}
+
+.overlay-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 32px;
+}
+
+.overlay-label {
+  margin-bottom: 4px;
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.overlay-input {
+  padding: 15px 15px 15px 43px;
+  outline: transparent;
+  width: 100%;
+  height: 45px;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: start;
+  color: rgba(17, 17, 17, 0.7);
+}
+.overlay-comment {
+  resize: none;
+  width: 100%;
+  height: 91px;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: start;
+  color: rgba(17, 17, 17, 0.7);
+  padding: 14px 18px;
+  outline: none;
+}
+
+.overlay-comment::placeholder {
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.overlay-input-icon {
+  position: relative;
+}
+
+.input-icon {
+  stroke: #404040;
+  fill: transparent;
+  position: absolute;
+  top: 14px;
+  left: 18px;
 }
