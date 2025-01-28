@@ -230,6 +230,16 @@ html {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
+  .header-menu-link:hover,
+  .footer-nav-link:hover {
+    color: #fd9222;
+  }
+
+  .header-soc-icon:hover {
+    stroke: #fd9222;
+  }
+
   .header-social-list {
     display: flex;
     flex-direction: row;
@@ -337,14 +347,22 @@ html {
   border: 1px solid #fff;
   border-radius: 100px;
   background-color: transparent;
-  font-weight: 600;
-  font-size: 14px;
   color: #fff;
-  padding: 12px 28px;
 }
 
-.start-page-second-btn:hover {
- border: 1px solid #fd9222;
+.start-page-second-link {
+  font-weight: 600;
+  font-size: 14px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  background-color: transparent;
+  color: #fff;
+  padding: 12px 28px;
+  text-align: center;
+}
+
+.start-page-second-link:hover {
+  border: 1px solid #fd9222;
   color: #fd9222;
 }
 
@@ -366,17 +384,39 @@ html {
   color: #fff;
   padding-top: 7px;
   padding-bottom: 7px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
 }
 
-.start-page-scroll-icon {
-  border-radius: 50%;
+.scroll-icon {
+  fill: #fd9222;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+}
+
+.span-scroll-icon {
+  border-radius: 50px;
   background-color: #fafafa;
   width: 28px;
   height: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: #fd9222;
+  padding: 8px;
+  display: block;
+  position: relative;
+}
+
+.start-page-scroll-btn:hover {
+  color: #fd9222;
+}
+
+.start-page-scroll-btn:hover > .span-scroll-icon {
+  background-color: #fd9222;
+}
+
+.start-page-scroll-btn:hover > .span-scroll-icon > .scroll-icon {
+  fill: #fafafa;
 }
 
 @media screen and (min-width: 768px) {
@@ -404,10 +444,18 @@ html {
   .start-page-btn-box {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     height: 45px;
     width: 100%;
+  }
+  .start-page-btn {
+    max-width: 341px;
+    margin-bottom: 0;
+  }
+
+  .start-page-second-link {
+    width: 183px;
   }
 }
 
@@ -506,7 +554,7 @@ html {
 }
 
 @media screen and (min-width: 1200px) {
-    .benefits-page-list {
+  .benefits-page-list {
     display: flex;
     flex-direction: row;
     gap: 70px;
